@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/chef-server
-  revision: 8165dfd0524ee6076eda32727cbd0005c9348150
+  revision: 6b0c8883c472a798209ccd16f42672f112643b06
   specs:
     oc-chef-pedant (2.2.0)
-      activesupport (~> 5.0)
+      activesupport (>= 4.2.7.1, < 6.0)
       erubis (~> 2.7)
       mixlib-authentication (~> 1.4)
       mixlib-config (~> 2.0)
@@ -66,10 +66,10 @@ GIT
 PATH
   remote: .
   specs:
-    chef (12.14.64)
+    chef (12.15.0)
       addressable
       bundler (>= 1.10)
-      chef-config (= 12.14.64)
+      chef-config (= 12.15.0)
       chef-zero (>= 4.8)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -95,10 +95,10 @@ PATH
       specinfra (~> 2.10)
       syslog-logger (~> 1.6)
       uuidtools (~> 2.1.5)
-    chef (12.14.64-universal-mingw32)
+    chef (12.15.0-universal-mingw32)
       addressable
       bundler (>= 1.10)
-      chef-config (= 12.14.64)
+      chef-config (= 12.15.0)
       chef-zero (>= 4.8)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -139,7 +139,7 @@ PATH
 PATH
   remote: chef-config
   specs:
-    chef-config (12.14.64)
+    chef-config (12.15.0)
       addressable
       fuzzyurl
       mixlib-config (~> 2.0)
@@ -156,14 +156,14 @@ GEM
     addressable (2.4.0)
     appbundler (0.9.0)
       mixlib-cli (~> 1.4)
-    artifactory (2.3.3)
+    artifactory (2.4.0)
     ast (2.3.0)
-    aws-sdk (2.5.11)
-      aws-sdk-resources (= 2.5.11)
-    aws-sdk-core (2.5.11)
+    aws-sdk (2.6.0)
+      aws-sdk-resources (= 2.6.0)
+    aws-sdk-core (2.6.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.5.11)
-      aws-sdk-core (= 2.5.11)
+    aws-sdk-resources (2.6.0)
+      aws-sdk-core (= 2.6.0)
     aws-sdk-v1 (1.66.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
@@ -200,7 +200,7 @@ GEM
     cheffish (4.0.0)
       chef-zero (~> 5.0)
       net-ssh
-    chefspec (5.0.0)
+    chefspec (5.1.0)
       chef (>= 12.0)
       fauxhai (~> 3.6)
       rspec (~> 3.0)
@@ -239,7 +239,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.10.0)
       faraday (>= 0.7.4, < 0.10)
-    fauxhai (3.8.0)
+    fauxhai (3.9.0)
       net-ssh
     ffi (1.9.14)
     ffi (1.9.14-x86-mingw32)
@@ -301,7 +301,7 @@ GEM
     jwt (1.5.4)
     kitchen-docker (2.6.0.rc.0)
       test-kitchen (>= 1.0.0)
-    kitchen-ec2 (1.1.0)
+    kitchen-ec2 (1.2.0)
       aws-sdk (~> 2)
       excon
       multi_json
