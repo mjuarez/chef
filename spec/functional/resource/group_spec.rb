@@ -168,6 +168,12 @@ describe Chef::Resource::Group, :requires_root_or_running_windows, :not_supporte
     end
 
     describe "when the users exist" do
+      before(:all) do
+        (spec_members).each do |member|
+          remove_user(member)
+        end
+      end
+
       before do
         (spec_members).each do |member|
           create_user(member)
