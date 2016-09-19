@@ -176,7 +176,8 @@ describe Chef::Resource::Group, :requires_root_or_running_windows, :not_supporte
         high_uid = 60000
         (spec_members).each do |member|
           remove_user(member)
-          create_user(member, high_uid++)
+          create_user(member, high_uid)
+          high_uid += 1
         end
       end
 
